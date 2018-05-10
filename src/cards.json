@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "https://www.unilad.co.uk/wp-content/uploads/2018/01/Eleven-Stranger-Things-2-Netflix-Still.jpg",
+        "name": "Eleven"
+    },
+    {
+        "id": 2,
+        "image": "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimages.hellogiggles.com%2Fuploads%2F2016%2F09%2F12102228%2Fdustin1.jpg&w=700&q=85",
+        "name": "Dustin"
+    },
+    {
+        "id": 3,
+        "image": "http://rockaxis.com/sites/default/files/styles/colorbox/public/node/novedades/imagen/134376.jpg?itok=czyreIHX",
+        "name": "Mike"
+    },
+    {
+        "id": 4,
+        "image": "https://data.whicdn.com/images/258657830/large.jpg",
+        "name": "Lucas"
+    },
+    {
+        "id": 5,
+        "image": "https://pixel.nymag.com/imgs/daily/vulture/2017/10/27/27-will-byers-stranger-things.w710.h473.jpg",
+        "name": "Will"
+    },
+    {
+        "id": 6,
+        "image": "https://nypdecider.files.wordpress.com/2017/11/stranger-things-mad-max.png?w=646&h=431&crop=1",
+        "name": "Max"
+    }
+]
