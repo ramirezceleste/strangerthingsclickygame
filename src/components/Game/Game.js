@@ -15,6 +15,7 @@ class Game extends Component {
     this.setState({
       randomNumber: random
     });
+    this.shuffleArray();
   }
 
   cardClickedOn = (id) => {
@@ -23,12 +24,11 @@ class Game extends Component {
         score: this.state.score + 1
       });
     } 
-    this.setState({
-      strangerthings: this.shuffleArray(this.state.strangerthings)
-    })
+      this.shuffleArray();
   };
 
-  shuffleArray = (array) => {
+  shuffleArray = () => {
+    let array = this.state.strangerthings;
     let i = array.length - 1;
     for (; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -36,16 +36,17 @@ class Game extends Component {
       array[i] = array[j];
       array[j] = temp;
   }
-  return array;
+  this.setState({
+    strangerthings: array
+  })
 }
   
   render() {
-    const shuffleCards = this.shuffleArray(this.state.strangerthings);
     return (
       <div className="container">
           <h3>Random Number: {this.state.randomNumber}</h3>
           <h3>Score: {this.state.score}</h3>
-          {shuffleCards.map(cast => (
+          {this.state.strangerthings.map(cast => (
            <Card
             key={cast.id} 
             id={cast.id} 
